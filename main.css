@@ -1,0 +1,293 @@
+/* import block fonts */
+@import '/styles/fonts.css';
+@import './styles/common.blocks/footer.css';
+@import './styles/common.blocks/main.css';
+@import './styles/common.blocks/header.css';
+
+/* global styles */
+*{
+box-sizing: border-box;
+margin: 0;
+border: none;
+}
+
+ul{
+list-style-type: none;
+padding-left: 0;
+margin-block-start: 0;
+margin-block-end: 0;
+}
+
+body{
+background-color: #000000;
+}
+/* Header */
+header{
+height: 80px;
+background-color: black;
+color: #ffff;
+display: flex;
+align-items: center;
+padding: 22px;
+position: fixed;
+width: 100%;
+z-index: 10;
+}
+
+.imageWrapper img{
+  height: 32px;
+  width: 118px;
+}
+
+.imageWrapper{
+  margin-right: 200px;
+}
+
+nav ul{
+display: flex;
+}
+
+nav ul li{
+margin-right: 35px;
+font-family: soehne;
+font-size: 18px;
+cursor: pointer;
+}
+
+nav ul li:hover{
+text-decoration: underline;
+  }
+
+header button {
+position:absolute;
+right: 24px;
+border: none;
+background-color: transparent;
+font-family: soehne;
+font-size: 18px;
+color: #ffff;
+cursor: pointer;
+}
+
+header button:hover{
+text-decoration: underline;
+}
+
+/* main section*/
+
+.main-screen{
+  height: 100vh;
+}
+
+.main-screen video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color:#00000080;
+}
+
+.main-text{
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 50px 200px 50px 300px;
+}
+
+.main-text h1{
+color: #ffff;
+font-family: soehne;
+font-size: 73px;
+font-weight: 400;
+line-height: 73px;
+margin-bottom: 70px;
+}
+
+.main-text a{
+font-family: soehne;
+font-size: 18px;
+text-decoration: none;
+color: #ffff;
+padding: 5px 10px;
+}
+
+.main-text h1 + a {
+  border: 1px solid white;
+}
+
+.main-text h1 + a:hover{
+background-color: #ffff;
+color: black;
+}
+
+.main-text a:last-child {
+text-decoration: underline;
+}
+
+.main-text a:last-child:hover {
+  text-decoration-color: #ffffff80;
+  }
+
+  /* featured */
+  .featured{
+    background-color: black;
+ 
+  }
+
+  .featured div{
+    display: flex;
+    padding:50px 20px 100px 30px;
+  }
+
+  .featured .item{
+    width: 40%;
+    color: #ffff;
+    font-family: soehne;
+    padding-right: 30px;
+  }
+
+  .featured a{
+    font-size: 18px;
+    text-decoration: none;
+      }
+
+ .featured h3{
+  font-size: 28px;
+  margin-bottom: 10px;
+   }
+   .featured p{
+    text-decoration: underline;
+   }
+   .featured .item p:hover{
+text-decoration-color:#ffffff44 ;
+   }
+
+  .divider{
+  margin:0px 20px;
+    border-bottom: 1px silver solid ;
+  }
+
+  /* chatgpt */
+  .chatgpt{
+background-color: #000000;
+color: #ffff;
+display: flex;
+padding: 20px;
+  }
+  
+.chatgpt img{
+ width: 50%;
+ padding: 20px 20px 100px;
+  }
+
+.chatgpt h2{
+  font-family: signifier;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  }
+
+.chatgpt p{
+  font-family: Soehne;
+  font-size: 18px;
+  margin-bottom: 20px;
+  }
+
+ .chatgpt a{
+    font-family: Soehne;
+    font-size: 18px;
+    }
+
+.chatgpt .textwrapper{
+padding: 0px 20px;
+}
+.chatgpt .anchornwrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.chatgpt a{
+  cursor: pointer;
+  color: #ffff;
+  margin-bottom: 5px;
+  }
+
+  .chatgpt a:hover{
+    text-decoration-color: #ffffff55 ;
+    }
+
+
+  /* lastes updates */
+  .updates{
+    background-color: #000000;
+    color: #ffff;
+    padding: 10px 20px 20px;
+  }
+
+  .updates .header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+  }
+
+  .updates .header button{
+ text-decoration: underline;
+ border: none;
+ background: transparent;
+ color: #ffff;
+ font-family: Soehne;
+ font-size: 18px;
+  }
+
+  .updates .itemwrapper{
+display: flex;
+justify-content: space-between;
+  }
+
+  .updates .itemwrapper img{
+ width: 100%;
+      }
+
+  .updates .itemwrapper .item{
+ width: 24%;
+ color: #ffff;
+text-decoration: none;
+      }
+
+.updates .header h2{
+font-family: signifier;
+font-size: 48px;
+font-weight: 400;
+       }      
+
+       .updates .header button:hover{
+        text-decoration: none;
+        cursor: pointer;  
+        }
+       
+.updates .itemwrapper h3{
+font-family: soehne;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffff;
+       }
+
+
+.updates .itemwrapper p{
+  font-family: soehne;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffff;
+         }  
+
+.updates .itemwrapper .item:hover h3{
+  text-decoration: underline;
+}      
