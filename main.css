@@ -34,12 +34,12 @@ width: 100%;
 z-index: 10;
 }
 
-.imageWrapper img{
+.image__wrapper img{
   height: 32px;
   width: 118px;
 }
 
-.imageWrapper{
+.image__wrapper{
   margin-right: 200px;
 }
 
